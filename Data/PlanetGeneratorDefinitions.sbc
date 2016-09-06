@@ -1,0 +1,66 @@
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>AAAA</SubtypeId>
+    </Id>
+    <PlanetMaps Material="false" Ores="false" Biome="false" Occlusion="false"/>
+
+    <MaximumOxygen>0.0</MaximumOxygen>
+    <SurfaceGravity>3.0</SurfaceGravity>
+    <DefaultSurfaceMaterial Material="AlienSnow" MaxDepth="1"/>
+    <DefaultSubSurfaceMaterial Material="AlienSnow"/>
+
+    <AtmosphereSettings>
+        <RayleighScattering>
+            <X>100</X>
+            <Y>84</Y>
+            <Z>63</Z>
+        </RayleighScattering>
+        <MieScattering>50</MieScattering>
+        <MieColorScattering>
+            <X>44</X>
+            <Y>62</Y>
+            <Z>150</Z>
+        </MieColorScattering>
+        <RayleighHeight>36</RayleighHeight>
+        <RayleighHeightSpace>15</RayleighHeightSpace>
+        <RayleighTransitionModifier>0.4</RayleighTransitionModifier>
+        <MieHeight>200</MieHeight>
+        <MieG>0.9995474</MieG>
+        <Intensity>6</Intensity>
+        <SeaLevelModifier>1.0</SeaLevelModifier>
+        <AtmosphereTopModifier>3.1</AtmosphereTopModifier>
+        <FogIntensity>1.0</FogIntensity>
+        <Scale>10</Scale>
+    </AtmosphereSettings>
+    <Atmosphere>
+      <Breathable>false</Breathable>
+      <OxygenDensity>0.0</OxygenDensity>
+      <Density>3.9</Density>
+      <LimitAltitude>2.8</LimitAltitude>
+    </Atmosphere>
+
+    <CloudLayers>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+        </Textures>
+        <RelativeAltitude>2.9</RelativeAltitude>
+        <RotationAxis>
+          <X>0</X>
+          <Y>0.6</Y>
+          <Z>0.4</Z>
+        </RotationAxis>
+        <InitialRotation>-0.15</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+      </CloudLayer>
+    </CloudLayers>
+
+    <MaterialsMaxDepth Min="0" Max="0"/>
+    <MaterialsMinDepth Min="0" Max="0"/>
+    <HillParams Min = "0.00" Max ="3.0"/>
+
+  </Definition>
+</Definitions>
